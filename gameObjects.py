@@ -11,7 +11,7 @@ class GameBoard:
                 self.walls[row].append(None)
                 if layout[row][col] != 0:
                     if layout[row][col] == 2:
-                        self.ball = Ball((32*col) - 160,(32*row) - 160,self)
+                        self.ball = Ball((32*col) - 160 + 8,(32*row) - 160 + 8,self)
                     else:
                         self.walls[row][col] = Wall((32*col) - 160,(32*row) - 160,self)
 
